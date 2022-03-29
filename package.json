@@ -1,14 +1,11 @@
 {
-  "name": "tx2uml-tokeninfo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "sam bacha",
-  "license": "ISC",
+  "name": "isdx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "isdx contracts",
+  "keywords": ["solidity", "ethereum", "mev"],
+  "author": "SEE CONTRIBUTORS",
+  "license": "(MIT OR APACHE-2.0)",
   "devDependencies": {
     "prettier": "^2.6.0",
     "prettier-config-solidity": "^1.7.0",

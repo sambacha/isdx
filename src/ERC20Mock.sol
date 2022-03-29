@@ -10,7 +10,7 @@ contract ERC20Mock {
     }
 
     /**
-     *  @note
+     *
      * @dev The `balanceOf` function should be a view function, but for testing purposes, this function is not.
      * This makes  it easy to test non-compliant ERC-20 tokens.
      */
