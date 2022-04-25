@@ -58,7 +58,7 @@ contract SelectorsAndSignatures {
         return this.transfer.selector;
     }
 
-    function getSignature0ne() public pure returns (string memory) {
+    function getSignatureOne() public pure returns (string memory) {
         return "transfer(address, uint256)";
     }
 }
