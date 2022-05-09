@@ -1,14 +1,41 @@
 {
-  "name": "isdx",
-  "version": "0.1.0",
-  "private": true,
-  "description": "isdx contracts",
-  "keywords": ["solidity", "ethereum", "mev"],
+  "name": "vzor",
+  "version": "0.0.0",
+  "description": "I can see the Earth through the \"VZOR\" (porthole). The Earth is clearly visible",
+  "scripts": {
+    "fmt": "npx prettier --config .prettierrc.js --write '**/*.{sol,ts,tsx,js,md,yml,yaml}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/isdx.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "mev"
+  ],
+  "files": [
+    "/dist/**/*",
+    "/contracts",
+    "/contracts/base",
+    "/contracts/interfaces",
+    "/contracts/libraries",
+    "/artifacts/contracts/**/*.json",
+    "!artifacts/contracts/**/*.dbg.json",
+    "!artifacts/contracts/test/**/*",
+    "!artifacts/contracts/base/**/*",
+    "/src/**/*"
+  ],
   "author": "SEE CONTRIBUTORS",
   "license": "(MIT OR APACHE-2.0)",
+  "dependencies": {},
   "devDependencies": {
-    "prettier": "^2.6.0",
-    "prettier-config-solidity": "^1.7.0",
-    "prettier-plugin-solidity": "^1.0.0-beta.19"
-  }
+    "prettier": "2.6.0",
+    "prettier-config-solidity": "1.7.0",
+    "prettier-plugin-solidity": "1.0.0-beta.19"
+  },
+  "bugs": {
+    "url": "https://github.com/sambacha/isdx/issues"
+  },
+  "homepage": "https://github.com/sambacha/isdx#readme"
 }

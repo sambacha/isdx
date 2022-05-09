@@ -21,10 +21,17 @@ contract MockUniSwapRouterV3 {
         uint160 sqrtPriceLimitX96;
     }
 
-    function exactInputSingle(ExactInputSingleParams calldata params) external payable returns (uint256) {
+    function exactInputSingle(ExactInputSingleParams calldata params)
+        external
+        payable
+        returns (uint256)
+    {
         ERC20(params.tokenIn).transferFrom(msg.sender, address(this), params.amountIn);
 
-        uint256 amountOut = (params.amountIn).fmul(EXCHANGE_RATE, 10**ERC20(params.tokenIn).decimals());
+        uint256 amountOut = (params.amountIn).fmul(
+            EXCHANGE_RATE,
+            10**ERC20(params.tokenIn).decimals()
+        );
         require(amountOut >= params.amountOutMinimum, "amountOutMin invariant failed");
 
         ERC20(params.tokenOut).transfer(params.recipient, amountOut);

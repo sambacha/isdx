@@ -9,7 +9,10 @@ contract MockUniV3Pool {
     function observe(uint32[] calldata secondsAgos)
         external
         view
-        returns (int56[] memory tickCumulatives, uint160[] memory secondsPerLiquidityCumulativeX128s)
+        returns (
+            int56[] memory tickCumulatives,
+            uint160[] memory secondsPerLiquidityCumulativeX128s
+        )
     {
         tickCumulatives = new int56[](2);
         secondsPerLiquidityCumulativeX128s = new uint160[](2);

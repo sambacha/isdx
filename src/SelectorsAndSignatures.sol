@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
+
 // source: twitter.com/PatrickAlphaC/status/1517156283215802368
 
 /// @title SelectorsAndSignatures
@@ -29,12 +30,7 @@ contract SelectorsAndSignatures {
     }
 
     function getCallData() public view returns (bytes memory) {
-        return
-            abi.encodeWithSignature(
-                "transfer(address, uint256)",
-                address(this),
-                123
-            );
+        return abi.encodeWithSignature("transfer(address, uint256)", address(this), 123);
     }
 
     function getSelectorThree(bytes calldata functionCallData)
