@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.4;
+/// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
 
 struct Account {
     uint256 etherBalance;
@@ -40,9 +40,9 @@ interface WalletSummarizerInterface {
         returns (Account[] memory accountSummaries);
 }
 
-/// Quickly check the Ether balance, as well as the balance of each
-/// supplied ERC20 token and a set of approved allowances, for an account or a
-/// collection of accounts.
+/// @notice Quickly check the Ether balance, as well as the balance of each
+///      supplied ERC20 token and a set of approved allowances, for an account or a
+///      collection of accounts.
 /// @author 0age
 contract WalletSummarizer is WalletSummarizerInterface {
     function summarize(TokenQuery[] calldata tokenQueries)
